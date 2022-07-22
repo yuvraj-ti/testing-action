@@ -5,10 +5,8 @@ const port = 8080;
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
+
 app.get('/healthcheck', (req, res) => {
-  res.send('healthcheck World!');
-});
-app.get('/.healthcheck', (req, res) => {
   res.send('healthcheck World!');
 });
 
